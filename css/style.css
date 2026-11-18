@@ -1,0 +1,131 @@
+
+
+.container{
+    margin:10px;
+    color: red;
+    height: 1000px;
+    width: 1700px;
+    border: 2px solid black;
+      /* perspective: 1000px;  */
+
+
+    
+}
+.cube{
+    transform-style: preserve-3d;
+    position: relative;
+     display: flex;
+    justify-content: center;
+   justify-content: space-around;
+   align-items: center;
+   /* padding-left: 100px; */
+   padding-top: 500px;
+   position: relative;
+   /* animation: spin 2s infinite linear; */
+   animation: spin 5s linear 0.5s infinite reverse forwards;
+   zoom: 1.2;
+
+    }
+     .face1{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+        border: 2px solid black; 
+        border-radius: 10px;       
+        background-color: antiquewhite;
+        position: absolute;
+        transform: rotateX(0deg) translatez(100px);
+    }
+    
+    .face2{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+        border: 2px solid black; 
+        border-radius: 10px;       
+        background-color: red;
+        position: absolute;
+         transform: rotateX(-180deg) translatez(100px); 
+
+
+    }
+    
+    .face3{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+        border: 2px solid green; 
+        border-radius: 10px;       
+        background-color: antiquewhite;
+        position: absolute;
+         transform: rotateX(90deg) translatez(100px); 
+
+
+    }
+    
+    .face4{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+        border: 2px solid blueviolet; 
+        border-radius: 10px;       
+        background-color: antiquewhite;
+        position: absolute;
+         transform: rotateX(-90deg) translatez(100px); 
+
+
+    }
+    
+    .face5{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+        border: 2px solid black; 
+        border-radius: 10px;       
+        background-color: palevioletred;
+        position: absolute;
+         transform: rotateY(-90deg) translatez(100px); 
+
+
+    }
+    
+    .face6{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+        border: 2px solid black; 
+        border-radius: 10px;       
+        background-color: blue;
+        position: absolute;
+         transform: rotateY(-100deg) translateZ(100px); 
+
+
+    }
+
+     @keyframes spin {
+        25%{
+            transform: translate(2) rotateX(0deg);
+ 
+
+        }
+        50%{
+
+        transform: rotateX(0deg) rotateY(90deg);
+
+        }
+        75%{
+                   
+            
+            transform: rotatey(90deg) rotatey(180deg);
+
+
+        }
+        100%{
+           transform: rotatey(180deg) rotateY(-360deg);
+
+        }
+    
+        }   
+ 
+
+
